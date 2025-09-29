@@ -1,0 +1,25 @@
+.\diskspd.exe -c1G -d10 -b4k   -r -t1 -o1 -w100 -Sh -L -Rtext C:\Temp\4k_rand_write.txt
+.\diskspd.exe -c1G -d10 -b128k -s -t1 -o1 -w0   -Sh -L -Rtext C:\Temp\128k_seq_read.txt
+.\diskspd.exe -c1G -d10 -b128k -s -t1 -o1 -w100 -Sh -L -Rtext C:\Temp\128k_seq_write.txt
+.\diskspd.exe -c1G -d10 -b4k   -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_4k.txt
+.\diskspd.exe -c1G -d10 -b16k  -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_16k.txt
+.\diskspd.exe -c1G -d10 -b32k  -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_32k.txt
+.\diskspd.exe -c1G -d10 -b64k  -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_64k.txt
+.\diskspd.exe -c1G -d10 -b128k -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_128k.txt
+.\diskspd.exe -c1G -d10 -b256k -r -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\rand_256k.txt
+.\diskspd.exe -c1G -d10 -b4k   -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_4k.txt
+.\diskspd.exe -c1G -d10 -b16k  -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_16k.txt
+.\diskspd.exe -c1G -d10 -b32k  -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_32k.txt
+.\diskspd.exe -c1G -d10 -b64k  -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_64k.txt
+.\diskspd.exe -c1G -d10 -b128k -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_128k.txt
+.\diskspd.exe -c1G -d10 -b256k -s -t1 -o4 -w0 -Sh -L -Rtext C:\Temp\seq_256k.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o4 -w0   -Sh -L -Rtext C:\Temp\mix_4k_100R.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o4 -w100 -Sh -L -Rtext C:\Temp\mix_4k_100W.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o4 -w30  -Sh -L -Rtext C:\Temp\mix_4k_70R30W.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o4 -w50  -Sh -L -Rtext C:\Temp\mix_4k_50R50W.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o1  -w0 -Sh -L -Rtext C:\Temp\qd1_read.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o2  -w0 -Sh -L -Rtext C:\Temp\qd2_read.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o4  -w0 -Sh -L -Rtext C:\Temp\qd4_read.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o8  -w0 -Sh -L -Rtext C:\Temp\qd8_read.txt
+.\diskspd.exe -c1G -d10 -b4k -r -t1 -o16 -w0 -Sh -L -Rtext C:\Temp\qd16_read.txt
+
