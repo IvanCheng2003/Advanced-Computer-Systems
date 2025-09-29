@@ -1,0 +1,4 @@
+Case,GFLOPs
+Aligned,2.3814
+Misaligned,2.62564
+Tail(N=1023),2.69211
