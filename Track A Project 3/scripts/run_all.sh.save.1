@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+OUT=data/results.csv
+DURATION=2
+SEED=123
+NLOCKS=1024
+REPS=3
+
+mkdir -p data
+echo "impl,workload,nkeys,threads,nlocks,seconds,seed,run_id,total_ops,ops_per_s" > "$OUT"
+
+for impl in coarse striped; do
+  for workload in lookup insert mix7030; do
+    for nkeys in 10000 100000 1000000; do
+      for th in 1 2 4 8 16; do
+        for run_id in $(seq 1 $REPS); do
+          ./a4_bench --impl $impl --workload $workload --nkeys $nkeys --threads $th \
+            --seconds $DURATIONDURATION=2
+ --seed $SEED --nlocks $NLOCKS --prefill 1 --run_id $run_id \
+            >> "$OUT"
+        done
+      done
+    done
+  done
+done
